@@ -1,7 +1,5 @@
 FROM frolvlad/alpine-python3
 
-#RUN apk add wget bash man python3 pip3
-
 COPY app /tmp
 
 WORKDIR /tmp
