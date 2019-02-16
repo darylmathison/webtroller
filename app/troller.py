@@ -11,11 +11,9 @@ def main():
             requests.get(url, headers={"Accept": "application/json"})
             endtime = time.time()
 
-            log_statment = "url -> {url}, start-> {starttime}, end -> {endtime}, difference -> {diff}".format(
-                url=url, starttime=starttime, endtime=endtime, diff=endtime - starttime
-            )
-            print(log_statment)
-            log.write(log_statment + "\n")
+            log_statement = f'url -> {url}, start-> {starttime}, end -> {endtime}, difference -> {endtime - starttime}'
+            print(log_statement)
+            log.write(log_statement + "\n")
             time.sleep(30)
 
 
